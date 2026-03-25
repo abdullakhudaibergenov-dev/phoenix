@@ -1,4 +1,8 @@
 export const references = [
+  { key: 'enterpriseHiring' },
+  { key: 'hrModernization' },
+  { key: 'leadershipRollout' },
+  { key: 'workforceInitiative' },
   {
     title: 'Enterprise Hiring Transformation',
     description:
