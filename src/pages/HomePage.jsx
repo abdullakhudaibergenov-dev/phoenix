@@ -1,4 +1,3 @@
-import AboutSection from '../components/sections/AboutSection';
 import ContactSection from '../components/sections/ContactSection';
 import FeaturesSection from '../components/sections/FeaturesSection';
 import HeroSection from '../components/sections/HeroSection';
@@ -10,7 +9,6 @@ function HomePage() {
     <>
       <HeroSection />
       <FeaturesSection />
-      <AboutSection />
       <ServicesSection />
       <ReferencesSection />
       <ContactSection />

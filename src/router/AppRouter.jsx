@@ -1,6 +1,7 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 import Footer from '../components/layout/Footer';
 import Header from '../components/layout/Header';
+import ReferenceDetailPage from '../components/references/ReferenceDetailPage';
 import useScrollToTop from '../hooks/useScrollToTop';
 import AboutPage from '../pages/AboutPage';
 import ContactsPage from '../pages/ContactsPage';
@@ -20,6 +21,7 @@ function AppRouter() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/references" element={<ReferencesPage />} />
+          <Route path="/references/:slug" element={<ReferenceDetailPage />} />
           <Route path="/contacts" element={<ContactsPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
