@@ -11,6 +11,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <LanguageProvider>
         <App />
       </LanguageProvider>
+      <App />
     </BrowserRouter>
   </React.StrictMode>,
 );

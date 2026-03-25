@@ -9,6 +9,11 @@ function FeaturesSection() {
         <div className="grid gap-5 md:grid-cols-3">
           {featureCards.map((feature) => (
             <FeatureCard key={feature.key} icon={feature.icon} translationKey={feature.key} />
+    <section className="-mt-10 pb-16">
+      <Container>
+        <div className="grid gap-5 md:grid-cols-3">
+          {featureCards.map((feature) => (
+            <FeatureCard key={feature.title} {...feature} />
           ))}
         </div>
       </Container>

@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import logo from '../../assets/phoenix-logo.svg';
 import useLanguage from '../../hooks/useLanguage';
+import { NavLink, useLocation } from 'react-router-dom';
+import logo from '../../assets/phoenix-logo.svg';
 import Container from '../common/Container';
 import { homeSectionLinks, navLinks } from '../../data/navigation';
 
@@ -24,6 +26,9 @@ function Header() {
     const link = navLinks.find((item) => item.key === id);
     if (link) navigate(link.path);
     setOpen(false);
+      if (section) section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      setOpen(false);
+    }
   };
 
   const navClass = ({ isActive }) =>
@@ -43,6 +48,7 @@ function Header() {
           {navLinks.map((item) => (
             <NavLink key={item.path} to={item.path} className={navClass}>
               {t.nav[item.key]}
+              {item.label}
             </NavLink>
           ))}
         </nav>
@@ -63,6 +69,8 @@ function Header() {
         >
           ☰
         </button>
+
+        <div className="hidden w-[180px] md:block" aria-hidden="true" />
       </Container>
 
       {open ? (
@@ -84,6 +92,7 @@ function Header() {
                     onClick={() => handleHomeSectionClick(item.id)}
                   >
                     {t.nav[item.key]}
+                    {item.label}
                   </button>
                 ))
               : navLinks.map((item) => (
@@ -94,6 +103,7 @@ function Header() {
                     onClick={() => setOpen(false)}
                   >
                     {t.nav[item.key]}
+                    {item.label}
                   </NavLink>
                 ))}
           </Container>

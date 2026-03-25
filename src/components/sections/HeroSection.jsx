@@ -20,6 +20,19 @@ function HeroSection() {
             </Link>
             <Link to="/contacts">
               <Button variant="secondary">{t.hero.secondaryCta}</Button>
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-goldSoft">Premium Corporate Solutions</p>
+          <h1 className="text-4xl font-bold leading-tight text-zinc-100 sm:text-5xl lg:text-6xl">
+            Elevate Your Business with Precision and Leadership
+          </h1>
+          <p className="mt-6 text-lg text-zinc-300">
+            Phoenix delivers executive consulting and HR transformation services designed for sustainable performance.
+          </p>
+          <div className="mt-8 flex flex-wrap gap-4">
+            <Link to="/services">
+              <Button>Explore Services</Button>
+            </Link>
+            <Link to="/contacts">
+              <Button variant="secondary">Book a Consultation</Button>
             </Link>
           </div>
         </div>
