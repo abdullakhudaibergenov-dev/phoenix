@@ -25,8 +25,8 @@ function ReferenceDetailPage() {
         <Container>
           <ReferencesMenu />
           <p className="mt-10 text-xs font-semibold uppercase tracking-[0.22em] text-gold">{content.menuLabel}</p>
-          <h1 className="mt-4 max-w-4xl text-3xl font-bold text-zinc-100 sm:text-4xl">{content.title}</h1>
-          <p className="mt-4 max-w-3xl text-zinc-300">{content.subtitle}</p>
+          <h1 className="mt-4 max-w-4xl text-3xl font-bold text-gold sm:text-4xl">{content.title}</h1>
+          <p className="mt-4 max-w-3xl text-zinc-100">{content.subtitle}</p>
         </Container>
       </section>
 
@@ -49,22 +49,22 @@ function ReferenceDetailPage() {
           <div className="grid gap-6 lg:grid-cols-2">
             <article className="rounded-2xl border border-zinc-800 bg-primary p-7 shadow-card lg:col-span-2">
               <h3 className="text-xl font-semibold text-gold">{t.references.whatWeDidLabel}</h3>
-              <p className="mt-4 leading-8 text-zinc-300">{content.whatWeDid}</p>
+              <p className="mt-4 leading-8 text-zinc-100">{content.whatWeDid}</p>
             </article>
 
             <article className="rounded-2xl border border-zinc-800 bg-primary p-7 shadow-card">
               <h3 className="text-xl font-semibold text-gold">{t.references.challengesLabel}</h3>
-              <p className="mt-4 leading-8 text-zinc-300">{content.challenges}</p>
+              <p className="mt-4 leading-8 text-zinc-100">{content.challenges}</p>
             </article>
 
             <article className="rounded-2xl border border-zinc-800 bg-primary p-7 shadow-card">
               <h3 className="text-xl font-semibold text-gold">{t.references.solutionsLabel}</h3>
-              <p className="mt-4 leading-8 text-zinc-300">{content.solutions}</p>
+              <p className="mt-4 leading-8 text-zinc-100">{content.solutions}</p>
             </article>
 
             <article className="rounded-2xl border border-zinc-800 bg-primary p-7 shadow-card lg:col-span-2">
               <h3 className="text-xl font-semibold text-gold">{t.references.resultsLabel}</h3>
-              <p className="mt-4 leading-8 text-zinc-300">{content.results}</p>
+              <p className="mt-4 leading-8 text-zinc-100">{content.results}</p>
             </article>
           </div>
         </Container>

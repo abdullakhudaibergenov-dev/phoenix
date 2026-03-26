@@ -19,6 +19,30 @@ export const translations = {
       insight: { title: 'Insight', description: 'Data-backed analysis that helps teams make strategic decisions.' },
       strategy: { title: 'Strategy', description: 'Clear execution plans aligned with your business priorities.' },
     },
+    homeStats: {
+      eyebrow: 'Impact Metrics',
+      title: 'Measured outcomes behind our consulting work',
+      items: [
+        { label: 'Years of expertise', value: 20, suffix: '+' },
+        { label: 'Corporate clients served', value: 1000, suffix: '+' },
+        { label: 'Projects delivered', value: 300, suffix: '+' },
+        { label: 'Industry awards', value: 64, suffix: '' },
+      ],
+    },
+    social: {
+      eyebrow: 'Social',
+      title: 'Stay connected with Phoenix',
+      subtitle: 'Explore our latest insights and community highlights across our social channels.',
+      followText: 'Follow Us →',
+      linkedin: {
+        label: 'LinkedIn',
+        title: 'Join our professional network',
+      },
+      instagram: {
+        label: 'Instagram',
+        title: 'Discover our community',
+      },
+    },
     services: {
       sectionEyebrow: 'Services',
       sectionTitle: 'Tailored HR and Business Services',
@@ -101,9 +125,9 @@ export const translations = {
       introText:
         'Phoenix combines strategic advisory and execution-focused talent solutions to help modern companies scale with confidence. Our approach aligns leadership, culture, and workforce architecture into one coherent growth system.',
       stats: [
-        { label: 'Years of advisory excellence', value: '12+' },
-        { label: 'Corporate transformation programs', value: '180+' },
-        { label: 'Average retention improvement', value: '22%' },
+        { label: 'Years of advisory excellence', value: 12, suffix: '+' },
+        { label: 'Corporate transformation programs', value: 180, suffix: '+' },
+        { label: 'Average retention improvement', value: 22, suffix: '%' },
       ],
       phoenixTitle: 'Phoenix',
       phoenixText:
@@ -143,6 +167,30 @@ export const translations = {
       consulting: { title: 'Консалтинг', description: 'Фокусная экспертная поддержка для оптимизации процессов и роста.' },
       insight: { title: 'Аналитика', description: 'Решения на основе данных для уверенных стратегических шагов.' },
       strategy: { title: 'Стратегия', description: 'Четкие планы реализации, привязанные к бизнес-приоритетам.' },
+    },
+    homeStats: {
+      eyebrow: 'Ключевые метрики',
+      title: 'Измеримые результаты нашей консалтинговой работы',
+      items: [
+        { label: 'Лет экспертизы', value: 20, suffix: '+' },
+        { label: 'Корпоративных клиентов', value: 1000, suffix: '+' },
+        { label: 'Реализованных проектов', value: 300, suffix: '+' },
+        { label: 'Профессиональных наград', value: 64, suffix: '' },
+      ],
+    },
+    social: {
+      eyebrow: 'Соцсети',
+      title: 'Оставайтесь на связи с Phoenix',
+      subtitle: 'Следите за нашими экспертными материалами и жизнью сообщества в социальных сетях.',
+      followText: 'Подписаться →',
+      linkedin: {
+        label: 'LinkedIn',
+        title: 'Присоединяйтесь к нашей профессиональной сети',
+      },
+      instagram: {
+        label: 'Instagram',
+        title: 'Откройте наше сообщество',
+      },
     },
     services: {
       sectionEyebrow: 'Услуги',
@@ -226,9 +274,9 @@ export const translations = {
       introText:
         'Phoenix объединяет стратегический консалтинг и практичные talent-решения, помогая компаниям масштабироваться уверенно. Мы синхронизируем лидерство, культуру и архитектуру команды в единую систему роста.',
       stats: [
-        { label: 'Лет экспертизы', value: '12+' },
-        { label: 'Программ трансформации', value: '180+' },
-        { label: 'Рост удержания в среднем', value: '22%' },
+        { label: 'Лет экспертизы', value: 12, suffix: '+' },
+        { label: 'Программ трансформации', value: 180, suffix: '+' },
+        { label: 'Рост удержания в среднем', value: 22, suffix: '%' },
       ],
       phoenixTitle: 'Phoenix',
       phoenixText:
