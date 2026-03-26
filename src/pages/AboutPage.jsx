@@ -11,7 +11,7 @@ function AboutPage() {
       <section className="relative overflow-hidden border-b border-zinc-800 bg-primary bg-goldGlow py-24">
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/60" />
         <Container className="relative z-10">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-gold">Phoenix Corporate</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-gold">fdjglsffn Corporate</p>
           <h1 className="mt-4 text-4xl font-bold text-zinc-100 sm:text-5xl">{t.aboutPage.heroTitle}</h1>
           <p className="mt-5 max-w-3xl text-lg text-zinc-300">{t.aboutPage.heroSubtitle}</p>
         </Container>
