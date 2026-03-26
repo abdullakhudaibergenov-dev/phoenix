@@ -1,18 +1,18 @@
 import Container from '../common/Container';
 
 const heroImage =
-  'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=2000&q=80';
+  'https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=2000&q=80';
 
 const recruitmentImages = [
   {
     src: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80',
-    alt: 'Executive recruitment strategy meeting in a boardroom',
-    caption: 'Executive Search Strategy',
+    alt: 'Executive recruitment strategy meeting in a modern boardroom',
+    caption: 'Executive Search & Advisory',
   },
   {
     src: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80',
-    alt: 'Analyst reviewing workforce planning and market intelligence',
-    caption: 'Workforce Intelligence & Forecasting',
+    alt: 'Corporate analyst reviewing workforce and talent data',
+    caption: 'Talent Intelligence & Workforce Planning',
   },
 ];
 
@@ -20,21 +20,21 @@ function ServicesSection() {
   return (
     <>
       <section
-        className="relative isolate flex min-h-[52vh] items-center justify-center overflow-hidden border-b border-white/10"
+        className="relative isolate flex min-h-[50vh] items-center justify-center overflow-hidden border-b border-[#c8a24d]/25"
         aria-labelledby="recruitment-hero-title"
       >
         <img
           src={heroImage}
-          alt="Corporate recruitment and consulting environment"
-          className="absolute inset-0 h-full w-full object-cover grayscale"
+          alt="Professional corporate recruitment environment"
+          className="absolute inset-0 h-full w-full object-cover"
           loading="eager"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/75 to-[#0a0a0a]/95" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_14%_22%,rgba(255,255,255,0.08),transparent_40%),radial-gradient(circle_at_84%_72%,rgba(255,255,255,0.05),transparent_42%)]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/70 to-[#0b0b0b]/95" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(200,162,77,0.12),transparent_40%),radial-gradient(circle_at_80%_70%,rgba(255,255,255,0.06),transparent_45%)]" />
 
         <Container className="relative z-10 flex flex-col items-center py-24 text-center md:py-28">
-          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.32em] text-[#d9d9d9]">
-            Strategic Human Capital Advisory
+          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.32em] text-[#e3c173]">
+            Strategic Human Capital Services
           </p>
           <h1
             id="recruitment-hero-title"
@@ -42,51 +42,50 @@ function ServicesSection() {
           >
             Recruitment
           </h1>
-          <span className="mt-6 h-px w-24 bg-gradient-to-r from-transparent via-[#c8a24d]/70 to-transparent" />
+          <span className="mt-6 h-px w-24 bg-gradient-to-r from-transparent via-[#c8a24d] to-transparent" />
         </Container>
       </section>
 
-      <section className="bg-[#111111] py-20 md:py-24" aria-labelledby="strategic-talent-solutions">
+      <section className="bg-[#0f0f0f] py-20 md:py-24" aria-labelledby="strategic-talent-solutions">
         <Container>
           <div className="grid items-start gap-12 lg:grid-cols-[minmax(0,1.5fr)_minmax(0,1fr)] lg:gap-16">
             <article className="max-w-3xl">
-              <p className="mb-3 text-xs font-semibold uppercase tracking-[0.26em] text-[#d9d9d9]">
+              <p className="mb-5 text-xs font-semibold uppercase tracking-[0.28em] text-[#d8b468]">
                 Strategic Talent Solutions
               </p>
-              <div className="mb-8 h-px w-28 bg-gradient-to-r from-[#c8a24d]/55 via-white/25 to-transparent" />
-
               <h2
                 id="strategic-talent-solutions"
                 className="mb-8 text-3xl font-semibold leading-tight text-white md:text-4xl"
               >
-                Precision recruitment programs built for international employers requiring confident, long-term hiring
-                decisions.
+                Building resilient organizations through precision recruitment and market-led workforce strategy.
               </h2>
 
-              <div className="space-y-6 text-base leading-8 text-[#d9d9d9] md:text-lg">
+              <div className="space-y-6 text-base leading-8 text-zinc-300 md:text-lg">
                 <p>
-                  Our recruitment advisory model supports organizations that treat talent as a strategic asset rather than
-                  a transactional need. We begin with a disciplined employer needs analysis to map business priorities,
-                  leadership structure, and capability gaps, then translate those findings into focused workforce planning
-                  frameworks that guide each hiring initiative.
+                  Our recruitment practice is designed for organizations that require disciplined growth, leadership
+                  continuity, and measurable hiring outcomes. We begin with a structured employer needs analysis,
+                  aligning each search with your operating model, commercial priorities, culture, and long-term talent
+                  architecture. This allows us to define role profiles with strategic clarity rather than transactional
+                  urgency.
                 </p>
                 <p>
-                  Through targeted talent acquisition programs, we combine candidate sourcing, multistage screening, and
-                  performance-based evaluation methods to identify professionals who can deliver measurable impact. Our
-                  teams integrate role calibration, compensation context, and sector-specific market intelligence to ensure
-                  each shortlist is both commercially realistic and competitively positioned.
+                  Through integrated talent acquisition programs, we combine direct candidate sourcing, advanced
+                  screening frameworks, and market intelligence to identify high-performing professionals across
+                  specialist and executive functions. Every shortlist is supported by competency-based assessment,
+                  compensation benchmarking, and risk-calibrated hiring recommendations so decision makers can proceed
+                  with confidence.
                 </p>
                 <p>
-                  With access to an international recruitment network across major business corridors, we provide broad yet
-                  selective reach for specialist and executive mandates. This global access is strengthened by local labor
-                  awareness, process governance, and workforce support services that include onboarding coordination,
-                  payroll continuity planning, and post-placement stabilization.
+                  Our international talent network spans key business hubs, enabling targeted access to qualified
+                  candidates in competitive markets while maintaining local regulatory awareness. We support employers
+                  with recruitment process optimization, onboarding advisory, and payroll and workforce support models
+                  that strengthen retention and operational stability from day one.
                 </p>
                 <p>
-                  We continuously refine recruitment process optimization through data-led review cycles, forecasting
-                  insights, and stakeholder alignment workshops. The result is a consistent best-talent-match approach that
-                  reduces hiring risk, improves retention quality, and creates long-term business value for employers
-                  building resilient, future-ready teams.
+                  By combining strategic workforce planning with deep sector expertise, we deliver the best talent-match
+                  approach for both immediate appointments and future leadership pipelines. The result is long-term value
+                  for employers: stronger teams, reduced hiring friction, and a recruitment function that performs as a
+                  true strategic partner to the business.
                 </p>
               </div>
             </article>
@@ -95,34 +94,24 @@ function ServicesSection() {
               {recruitmentImages.map((image) => (
                 <figure
                   key={image.src}
-                  className="group overflow-hidden rounded-md border border-white/15 bg-[#1a1a1a] shadow-[0_18px_34px_rgba(0,0,0,0.48)] transition duration-500 hover:-translate-y-1 hover:border-[#c8a24d]/45 hover:shadow-[0_24px_42px_rgba(0,0,0,0.58)]"
+                  className="group overflow-hidden rounded-md border border-[#c8a24d]/45 bg-[#121212] shadow-[0_18px_34px_rgba(0,0,0,0.42)] transition duration-500 hover:-translate-y-1 hover:shadow-[0_24px_44px_rgba(0,0,0,0.55)]"
                 >
                   <div className="relative h-64 overflow-hidden md:h-72">
                     <img
                       src={image.src}
                       alt={image.alt}
-                      className="h-full w-full object-cover grayscale transition duration-700 group-hover:scale-[1.03]"
+                      className="h-full w-full object-cover transition duration-700 group-hover:scale-[1.035]"
                       loading="lazy"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/15 to-transparent" />
                   </div>
-                  <figcaption className="border-t border-white/10 px-5 py-4 text-sm font-medium uppercase tracking-[0.18em] text-[#a0a0a0] transition-colors duration-500 group-hover:text-[#d9d9d9]">
+                  <figcaption className="border-t border-[#c8a24d]/30 px-5 py-4 text-sm font-medium uppercase tracking-[0.2em] text-[#ead39d]">
                     {image.caption}
                   </figcaption>
                 </figure>
               ))}
             </aside>
           </div>
-        </Container>
-      </section>
-
-      <section className="border-t border-white/10 bg-[#0a0a0a] py-10">
-        <Container>
-          <p className="max-w-4xl text-sm leading-7 text-[#a0a0a0] md:text-base">
-            Our engagement model aligns executive leadership, HR, and operational stakeholders through a structured
-            governance cadence, ensuring recruitment outcomes remain aligned with growth strategy, workforce resilience,
-            and long-range market positioning.
-          </p>
         </Container>
       </section>
     </>
