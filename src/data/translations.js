@@ -14,6 +14,9 @@ export const translations = {
       primaryCta: 'Explore Services',
       secondaryCta: 'Book a Consultation',
     },
+    comingSoon: {
+      title: 'Coming Soon',
+    },
     features: {
       consulting: { title: 'Consulting', description: 'Focused advisory support to optimize operations and growth.' },
       insight: { title: 'Insight', description: 'Data-backed analysis that helps teams make strategic decisions.' },
@@ -163,6 +166,9 @@ export const translations = {
       primaryCta: 'Смотреть услуги',
       secondaryCta: 'Запросить консультацию',
     },
+    comingSoon: {
+      title: 'Скоро',
+    },
     features: {
       consulting: { title: 'Консалтинг', description: 'Фокусная экспертная поддержка для оптимизации процессов и роста.' },
       insight: { title: 'Аналитика', description: 'Решения на основе данных для уверенных стратегических шагов.' },
@@ -295,6 +301,12 @@ export const translations = {
       contact: 'Контакты',
       description: 'Премиальные корпоративные решения для людей, процессов и роста.',
       rights: 'Все права защищены.',
+    },
+  },
+  tr: {
+    langLabel: 'TR',
+    comingSoon: {
+      title: 'Yakında',
     },
   },
 };

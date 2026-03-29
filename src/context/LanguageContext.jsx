@@ -6,14 +6,19 @@ export const LanguageContext = createContext(null);
 function LanguageProvider({ children }) {
   const [language, setLanguage] = useState('en');
 
-  const value = useMemo(
-    () => ({
+  const value = useMemo(() => {
+    const fallback = translations.en;
+    const selected = translations[language] || fallback;
+
+    return {
       language,
       setLanguage,
-      t: translations[language],
-    }),
-    [language],
-  );
+      t: {
+        ...fallback,
+        ...selected,
+      },
+    };
+  }, [language]);
 
   return <LanguageContext.Provider value={value}>{children}</LanguageContext.Provider>;
 }
