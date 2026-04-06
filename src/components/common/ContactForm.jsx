@@ -8,17 +8,23 @@ const nameRegex = /^[A-Za-zА-Яа-яЁё\s'-]+$/;
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 function ContactForm() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+  const messages = {
+    en: { name: 'Please enter a valid name.', email: 'Please enter a valid email.', phone: 'Please enter a valid phone number.', message: 'Message must be at least 8 characters.', formError: 'Please complete the form correctly.', success: 'Message sent successfully. We will contact you soon.' },
+    ru: { name: 'Введите корректное имя.', email: 'Введите корректный email.', phone: 'Введите корректный номер телефона.', message: 'Сообщение должно быть не менее 8 символов.', formError: 'Пожалуйста, заполните форму корректно.', success: 'Сообщение успешно отправлено. Мы свяжемся с вами.' },
+    tr: { name: 'Lütfen geçerli bir isim girin.', email: 'Lütfen geçerli bir e-posta girin.', phone: 'Lütfen geçerli bir telefon numarası girin.', message: 'Mesaj en az 8 karakter olmalıdır.', formError: 'Lütfen formu doğru şekilde doldurun.', success: 'Mesaj başarıyla gönderildi. En kısa sürede sizinle iletişime geçeceğiz.' },
+  };
+  const msg = messages[language] || messages.en;
   const [values, setValues] = useState({ name: '', email: '', phone: '', message: '' });
   const [touched, setTouched] = useState({});
 
   const errors = useMemo(() => {
     const next = {};
 
-    if (!values.name.trim() || !nameRegex.test(values.name.trim())) next.name = 'Please enter a valid name.';
-    if (!values.email.trim() || !emailRegex.test(values.email.trim())) next.email = 'Please enter a valid email.';
-    if (!values.phone || !isValidPhoneNumber(values.phone)) next.phone = 'Please enter a valid phone number.';
-    if (!values.message.trim() || values.message.trim().length < 8) next.message = 'Message must be at least 8 characters.';
+    if (!values.name.trim() || !nameRegex.test(values.name.trim())) next.name = msg.name;
+    if (!values.email.trim() || !emailRegex.test(values.email.trim())) next.email = msg.email;
+    if (!values.phone || !isValidPhoneNumber(values.phone)) next.phone = msg.phone;
+    if (!values.message.trim() || values.message.trim().length < 8) next.message = msg.message;
 
     return next;
   }, [values]);
@@ -35,11 +41,11 @@ function ContactForm() {
     setTouched({ name: true, email: true, phone: true, message: true });
 
     if (hasErrors) {
-      toast.error('Please complete the form correctly.');
+      toast.error(msg.formError);
       return;
     }
 
-    toast.success('Message sent successfully. We will contact you soon.');
+    toast.success(msg.success);
     setValues({ name: '', email: '', phone: '', message: '' });
     setTouched({});
   };

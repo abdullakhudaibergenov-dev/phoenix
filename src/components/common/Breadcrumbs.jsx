@@ -10,7 +10,7 @@ const routeNameMap = {
 
 function Breadcrumbs() {
   const { pathname } = useLocation();
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   if (pathname === '/') return null;
 
@@ -22,7 +22,7 @@ function Breadcrumbs() {
         <ol className="flex flex-wrap items-center gap-2 text-muted">
           <li>
             <Link to="/" className="hover:text-heading transition">
-              Home
+              {language === 'ru' ? 'Главная' : language === 'tr' ? 'Ana Sayfa' : 'Home'}
             </Link>
           </li>
           {segments.map((segment, index) => {

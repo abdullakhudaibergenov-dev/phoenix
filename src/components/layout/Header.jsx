@@ -11,6 +11,7 @@ function Header() {
   const location = useLocation();
   const { language, setLanguage, t } = useLanguage();
   const { theme, toggleTheme } = useTheme();
+  const themeLabel = language === 'ru' ? (theme === 'dark' ? 'Светлая' : 'Тёмная') : language === 'tr' ? (theme === 'dark' ? 'Açık' : 'Koyu') : theme === 'dark' ? 'Light' : 'Dark';
   const navigate = useNavigate();
 
   const handleHomeSectionClick = (id) => {
@@ -52,7 +53,7 @@ function Header() {
 
           <div className="hidden items-center gap-2 lg:flex">
             <button type="button" onClick={toggleTheme} className="rounded-md border border-zinc-700 px-3 py-1 text-xs font-semibold text-white transition hover:text-heading">
-              {theme === 'dark' ? 'Light' : 'Dark'}
+              {themeLabel}
             </button>
             <div className="flex items-center gap-1 rounded-lg border border-zinc-700 bg-zinc-900 p-1">
               <button type="button" className={languageButtonClass('en')} onClick={() => setLanguage('en')}>EN</button>
@@ -72,7 +73,7 @@ function Header() {
           <Container className="flex max-w-6xl flex-col py-3">
             <div className="mb-2 flex items-center gap-2 px-2">
               <button type="button" onClick={toggleTheme} className="rounded-md border border-zinc-700 px-3 py-1 text-xs font-semibold text-white transition hover:text-heading">
-                {theme === 'dark' ? 'Light' : 'Dark'}
+                {themeLabel}
               </button>
               <button type="button" className={languageButtonClass('en')} onClick={() => setLanguage('en')}>EN</button>
               <button type="button" className={languageButtonClass('ru')} onClick={() => setLanguage('ru')}>RU</button>

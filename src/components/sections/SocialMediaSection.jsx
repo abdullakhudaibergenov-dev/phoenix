@@ -6,35 +6,30 @@ import RevealOnScroll from '../common/RevealOnScroll';
 import SectionTitle from '../common/SectionTitle';
 import SocialCard from '../common/SocialCard';
 
+const socialCopy = {
+  en: { eyebrow: 'Social', title: 'Social Presence', subtitle: 'Connect with Phoenix across our official channels.', follow: 'Follow Us' },
+  ru: { eyebrow: 'Соцсети', title: 'Социальное присутствие', subtitle: 'Следите за Phoenix в наших официальных каналах.', follow: 'Подписаться' },
+  tr: { eyebrow: 'Sosyal', title: 'Sosyal Varlık', subtitle: 'Phoenix ile resmi sosyal kanallarımızda bağlantıda kalın.', follow: 'Takip Et' },
+};
+
 function SocialMediaSection() {
-  const { t } = useLanguage();
+  const { language } = useLanguage();
+  const copy = socialCopy[language] || socialCopy.en;
 
   return (
     <section className="pb-20">
       <Container>
         <RevealOnScroll>
-          <SectionTitle eyebrow={t.social.eyebrow} title={t.social.title} subtitle={t.social.subtitle} />
+          <SectionTitle eyebrow={copy.eyebrow} title={copy.title} subtitle={copy.subtitle} />
         </RevealOnScroll>
 
         <div className="grid gap-6 md:grid-cols-2">
           <RevealOnScroll>
-            <SocialCard
-              label={t.social.linkedin.label}
-              title={t.social.linkedin.title}
-              image={linkedinBg}
-              link="https://www.linkedin.com"
-              followText={t.social.followText}
-            />
+            <SocialCard label="LinkedIn" image={linkedinBg} link="https://www.linkedin.com" followText={copy.follow} />
           </RevealOnScroll>
 
           <RevealOnScroll delay={120}>
-            <SocialCard
-              label={t.social.instagram.label}
-              title={t.social.instagram.title}
-              image={instagramBg}
-              link="https://www.instagram.com"
-              followText={t.social.followText}
-            />
+            <SocialCard label="Instagram" image={instagramBg} link="https://www.instagram.com" followText={copy.follow} />
           </RevealOnScroll>
         </div>
       </Container>
