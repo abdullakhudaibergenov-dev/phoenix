@@ -2,10 +2,88 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --bg: #070707;
+  --surface: #101010;
+  --surface-2: #141414;
+  --text: #f8f8f8;
+  --muted: #d7d7d7;
+  --heading: #d4af37;
+  --border: #2a2a2a;
+}
+
+:root[data-theme='light'] {
+  --bg: #f8f8f6;
+  --surface: #ffffff;
+  --surface-2: #f2f1ed;
+  --text: #121212;
+  --muted: #2e2e2e;
+  --heading: #b78a18;
+  --border: #dfddd6;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  background: var(--bg);
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  @apply bg-primary text-zinc-100 antialiased;
+  @apply antialiased;
+  color: var(--text);
+  overscroll-behavior-y: none;
+}
+
+@layer utilities {
+  .bg-app {
+    background-color: var(--bg);
+  }
+  .bg-surface {
+    background-color: var(--surface);
+  }
+  .bg-surface-2 {
+    background-color: var(--surface-2);
+  }
+  .text-body {
+    color: var(--text);
+  }
+  .text-muted {
+    color: var(--muted);
+  }
+  .text-heading {
+    color: var(--heading);
+  }
+  .border-theme {
+    border-color: var(--border);
+  }
+}
+
+.phone-input .PhoneInputInput {
+  width: 100%;
+  background: transparent;
+  color: var(--text);
+  outline: none;
+}
+
+.phone-input .PhoneInputCountry {
+  margin-right: 0.5rem;
+}
+
+.home-slider .swiper-button-next,
+.home-slider .swiper-button-prev {
+  color: var(--heading);
+}
+
+.home-slider .swiper-pagination-bullet {
+  background: var(--heading);
+  opacity: 0.45;
+}
+
+.home-slider .swiper-pagination-bullet-active {
+  opacity: 1;
 }

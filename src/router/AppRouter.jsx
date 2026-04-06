@@ -2,19 +2,22 @@ import { Navigate, Route, Routes } from 'react-router-dom';
 import Footer from '../components/layout/Footer';
 import Header from '../components/layout/Header';
 import ReferenceDetailPage from '../components/references/ReferenceDetailPage';
-import { PUBLIC_COMING_SOON_MODE } from '../config/featureFlags';
+import Breadcrumbs from '../components/common/Breadcrumbs';
+import ScrollToTopButton from '../components/common/ScrollToTopButton';
 import useScrollToTop from '../hooks/useScrollToTop';
 import AboutPage from '../pages/AboutPage';
-import ComingSoonPage from '../pages/ComingSoonPage';
 import ContactsPage from '../pages/ContactsPage';
 import HomePage from '../pages/HomePage';
 import ReferencesPage from '../pages/ReferencesPage';
 import ServicesPage from '../pages/ServicesPage';
 
-function FullSiteRoutes() {
+function AppRouter() {
+  useScrollToTop();
+
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col bg-app text-body">
       <Header />
+      <Breadcrumbs />
       <main className="flex-1">
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -27,22 +30,9 @@ function FullSiteRoutes() {
         </Routes>
       </main>
       <Footer />
+      <ScrollToTopButton />
     </div>
   );
-}
-
-function ComingSoonRoutes() {
-  return (
-    <Routes>
-      <Route path="*" element={<ComingSoonPage />} />
-    </Routes>
-  );
-}
-
-function AppRouter() {
-  useScrollToTop();
-
-  return PUBLIC_COMING_SOON_MODE ? <ComingSoonRoutes /> : <FullSiteRoutes />;
 }
 
 export default AppRouter;

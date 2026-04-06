@@ -8,19 +8,19 @@ function Footer() {
   const { t } = useLanguage();
 
   return (
-    <footer className="mt-20 border-t border-zinc-800 bg-primary py-12 text-zinc-200">
+    <footer className="mt-16 border-t border-theme bg-surface py-12 text-body">
       <Container className="grid gap-8 md:grid-cols-3">
         <div>
           <img src={logo} alt="Phoenix logo" className="h-12 w-auto" />
-          <p className="mt-3 text-sm text-zinc-400">{t.footer.description}</p>
+          <p className="mt-4 text-sm text-muted">{t.footer.description}</p>
         </div>
 
         <div>
-          <h5 className="text-sm font-semibold uppercase tracking-wider text-gold">{t.footer.quickLinks}</h5>
+          <h5 className="text-sm font-semibold uppercase tracking-wider text-heading">{t.footer.quickLinks}</h5>
           <ul className="mt-3 space-y-2">
             {navLinks.map((item) => (
               <li key={item.path}>
-                <NavLink to={item.path} className="text-sm text-zinc-300 transition hover:text-gold">
+                <NavLink to={item.path} className="text-sm text-body transition hover:text-heading">
                   {t.nav[item.key]}
                 </NavLink>
               </li>
@@ -29,15 +29,15 @@ function Footer() {
         </div>
 
         <div>
-          <h5 className="text-sm font-semibold uppercase tracking-wider text-gold">{t.footer.contact}</h5>
-          <ul className="mt-3 space-y-2 text-sm text-zinc-400">
+          <h5 className="text-sm font-semibold uppercase tracking-wider text-heading">{t.footer.contact}</h5>
+          <ul className="mt-3 space-y-2 text-sm text-muted">
             <li>123 Business Avenue, New York, NY</li>
             <li>+1 (555) 100-2000</li>
             <li>hello@phoenixcorp.com</li>
           </ul>
         </div>
       </Container>
-      <Container className="mt-10 border-t border-zinc-800 pt-5 text-xs text-zinc-500">
+      <Container className="mt-10 border-t border-theme pt-5 text-xs text-muted">
         © {new Date().getFullYear()} Phoenix Corporate. {t.footer.rights}
       </Container>
     </footer>
