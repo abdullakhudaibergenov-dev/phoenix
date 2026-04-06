@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #070707;
+  --surface: #101010;
+  --surface-2: #161616;
+  --text: #ffffff;
+  --muted: #f0f0f0;
+  --heading: #d4af37;
+  --border: #2d2d2d;
+}
+
+:root[data-theme='light'] {
+  --bg: #faf9f5;
+  --surface: #ffffff;
+  --surface-2: #f3f1ea;
+  --text: #101010;
+  --muted: #202020;
+  --heading: #b78a18;
+  --border: #d6d3ca;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  background: var(--bg);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply antialiased;
+  color: var(--text);
+  overscroll-behavior-y: none;
+}
+
+@layer utilities {
+  .bg-app { background-color: var(--bg); }
+  .bg-surface { background-color: var(--surface); }
+  .bg-surface-2 { background-color: var(--surface-2); }
+  .text-body { color: var(--text); }
+  .text-muted { color: var(--muted); }
+  .text-heading { color: var(--heading); }
+  .border-theme { border-color: var(--border); }
+}
+
+.phone-input .PhoneInputInput {
+  width: 100%;
+  background: transparent;
+  color: var(--text);
+  outline: none;
+}
+
+.phone-input .PhoneInputCountry {
+  margin-right: 0.5rem;
+}
+
+.phone-input .PhoneInputCountrySelect {
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+}
+
+.phone-input .PhoneInputCountrySelect option {
+  background: var(--surface);
+  color: var(--text);
+}
+
+.home-slider .swiper-button-next,
+.home-slider .swiper-button-prev {
+  color: var(--heading);
+}
+
+.home-slider .swiper-pagination-bullet {
+  background: var(--heading);
+  opacity: 0.45;
+}
+
+.home-slider .swiper-pagination-bullet-active {
+  opacity: 1;
+}
