@@ -7,6 +7,17 @@ export const translations = {
       references: 'References',
       contacts: 'Contacts',
     },
+    common: {
+      home: 'Home',
+      scrollToTop: 'Scroll to top',
+    },
+    theme: {
+      light: 'Light',
+      dark: 'Dark',
+    },
+    header: {
+      toggleNavigation: 'Toggle navigation',
+    },
     hero: {
       eyebrow: 'Premium Corporate Solutions',
       title: 'Elevate Your Business with Precision and Leadership',
@@ -34,22 +45,22 @@ export const translations = {
     },
     social: {
       eyebrow: 'Social',
-      title: 'Stay connected with Phoenix',
-      subtitle: 'Explore our latest insights and community highlights across our social channels.',
-      followText: 'Follow Us →',
+      title: 'Social Presence',
+      subtitle: 'Connect with Phoenix across our official channels.',
+      followText: 'Follow Us',
       linkedin: {
         label: 'LinkedIn',
-        title: 'Join our professional network',
       },
       instagram: {
         label: 'Instagram',
-        title: 'Discover our community',
       },
     },
     services: {
       sectionEyebrow: 'Services',
       sectionTitle: 'Tailored HR and Business Services',
       sectionSubtitle: 'Our modular service portfolio adapts to your team, stage, and strategic objectives.',
+      pageTitle: 'Premium Services for Sustainable Growth',
+      pageSubtitle: 'Three focused solution areas designed for long-term corporate performance.',
       learnMore: 'Learn More →',
       recruitment: {
         title: 'Recruitment',
@@ -75,6 +86,20 @@ export const translations = {
         title: 'Employer Branding',
         description: 'Strengthen your brand perception to attract and retain quality talent.',
       },
+      pageBlocks: {
+        advisory: {
+          title: 'Strategic Advisory',
+          description: 'Executive-level consulting that aligns talent, operations, and growth priorities into one actionable roadmap.',
+        },
+        recruitment: {
+          title: 'Recruitment Excellence',
+          description: 'High-precision recruitment programs to attract qualified specialists and accelerate hiring outcomes.',
+        },
+        transformation: {
+          title: 'Organizational Transformation',
+          description: 'Structured initiatives that modernize HR architecture, leadership capability, and performance culture.',
+        },
+      },
     },
     references: {
       eyebrow: 'References',
@@ -89,6 +114,13 @@ export const translations = {
       resultsLabel: 'Results',
       companyLabel: 'Company',
       testimonialLabel: 'Client Testimonial',
+      pageTitle: 'Our Corporate Partners',
+      pageSubtitle: 'A minimal client showcase across key industry verticals.',
+      filters: {
+        hospitality: 'Hospitality',
+        manufacturing: 'Manufacturing',
+        construction: 'Construction',
+      },
       enterpriseHiring: {
         title: 'Enterprise Hiring Transformation',
         description: 'Delivered a 35% faster recruitment cycle for a regional technology enterprise.',
@@ -119,6 +151,14 @@ export const translations = {
         message: 'Message',
         send: 'Send Message',
       },
+      validation: {
+        name: 'Please enter a valid name.',
+        email: 'Please enter a valid email.',
+        phone: 'Please enter a valid phone number.',
+        message: 'Message must be at least 8 characters.',
+        formError: 'Please complete the form correctly.',
+      },
+      success: 'Message sent successfully. We will contact you soon.',
     },
     aboutPage: {
       heroTitle: 'About Us',
@@ -144,9 +184,29 @@ export const translations = {
       ctaTitle: 'Let’s shape your next chapter with purpose.',
       ctaButton: 'Contact Phoenix',
     },
+    companyInfo: {
+      eyebrow: 'Company',
+      title: 'Phoenix Corporate',
+      description: 'We help organizations build resilient teams, strengthen operating models, and execute growth with confidence.',
+      button: 'About Us →',
+    },
+    slider: {
+      services: {
+        title: 'Services',
+        text: 'Strategic HR and business services tailored to your growth stage.',
+      },
+      references: {
+        title: 'References',
+        text: 'Explore measurable outcomes from our consulting engagements.',
+      },
+      contact: {
+        title: 'Contact',
+        text: 'Connect with us and build your next transformation roadmap.',
+      },
+      button: 'Explore →',
+    },
     footer: {
       quickLinks: 'Quick Links',
-      contact: 'Contact',
       description: 'Premium corporate solutions for people, process, and growth.',
       rights: 'All rights reserved.',
     },
@@ -158,6 +218,17 @@ export const translations = {
       services: 'Услуги',
       references: 'Кейсы',
       contacts: 'Контакты',
+    },
+    common: {
+      home: 'Главная',
+      scrollToTop: 'Наверх',
+    },
+    theme: {
+      light: 'Светлая',
+      dark: 'Тёмная',
+    },
+    header: {
+      toggleNavigation: 'Открыть навигацию',
     },
     hero: {
       eyebrow: 'Премиальные корпоративные решения',
@@ -186,22 +257,22 @@ export const translations = {
     },
     social: {
       eyebrow: 'Соцсети',
-      title: 'Оставайтесь на связи с Phoenix',
-      subtitle: 'Следите за нашими экспертными материалами и жизнью сообщества в социальных сетях.',
-      followText: 'Подписаться →',
+      title: 'Социальное присутствие',
+      subtitle: 'Следите за Phoenix в наших официальных каналах.',
+      followText: 'Подписаться',
       linkedin: {
         label: 'LinkedIn',
-        title: 'Присоединяйтесь к нашей профессиональной сети',
       },
       instagram: {
         label: 'Instagram',
-        title: 'Откройте наше сообщество',
       },
     },
     services: {
       sectionEyebrow: 'Услуги',
       sectionTitle: 'Индивидуальные HR и бизнес-решения',
       sectionSubtitle: 'Наш сервисный портфель адаптируется под вашу команду, этап развития и цели.',
+      pageTitle: 'Премиальные услуги для устойчивого роста',
+      pageSubtitle: 'Три ключевых направления для долгосрочной корпоративной эффективности.',
       learnMore: 'Подробнее →',
       recruitment: {
         title: 'Рекрутмент',
@@ -227,6 +298,20 @@ export const translations = {
         title: 'Бренд работодателя',
         description: 'Усиление репутации компании для привлечения и удержания талантов.',
       },
+      pageBlocks: {
+        advisory: {
+          title: 'Стратегический консалтинг',
+          description: 'Консалтинг для руководителей, объединяющий таланты, операции и цели роста в единую дорожную карту.',
+        },
+        recruitment: {
+          title: 'Рекрутмент-экспертиза',
+          description: 'Точный подбор, который помогает привлекать сильных специалистов и ускорять найм.',
+        },
+        transformation: {
+          title: 'Трансформация организации',
+          description: 'Системные изменения в HR-архитектуре, лидерстве и культуре производительности.',
+        },
+      },
     },
     references: {
       eyebrow: 'Кейсы',
@@ -241,6 +326,13 @@ export const translations = {
       resultsLabel: 'Результаты',
       companyLabel: 'Компания',
       testimonialLabel: 'Отзыв клиента',
+      pageTitle: 'Наши корпоративные партнеры',
+      pageSubtitle: 'Минималистичная витрина клиентов по ключевым направлениям.',
+      filters: {
+        hospitality: 'Гостиницы',
+        manufacturing: 'Производство',
+        construction: 'Строительство',
+      },
       enterpriseHiring: {
         title: 'Трансформация подбора в enterprise',
         description: 'Сократили цикл найма на 35% для региональной технологической компании.',
@@ -271,6 +363,14 @@ export const translations = {
         message: 'Сообщение',
         send: 'Отправить',
       },
+      validation: {
+        name: 'Введите корректное имя.',
+        email: 'Введите корректный email.',
+        phone: 'Введите корректный номер телефона.',
+        message: 'Сообщение должно быть не менее 8 символов.',
+        formError: 'Пожалуйста, заполните форму корректно.',
+      },
+      success: 'Сообщение успешно отправлено. Мы свяжемся с вами.',
     },
     aboutPage: {
       heroTitle: 'О нас',
@@ -287,26 +387,252 @@ export const translations = {
       phoenixTitle: 'Phoenix',
       phoenixText:
         'Phoenix — это дисциплина обновления. Мы помогаем компаниям развиваться, сохраняя сильную идентичность. Каждый проект начинается с понимания уникальности бизнеса и построения систем, которые усиливают это преимущество.',
-      missionTitle: 'Mission',
+      missionTitle: 'Миссия',
       missionText:
         'Наша миссия — превращать HR-стратегию в измеримую бизнес-эффективность. Мы создаем рабочие модели управления талантами, которые повышают скорость исполнения, качество лидерства и вовлеченность.',
-      visionTitle: 'Vision',
+      visionTitle: 'Видение',
       visionText:
         'Наше видение — стать эталоном премиального корпоративного консалтинга на растущих рынках, задавая стандарт стратегической ясности, этичного лидерства и устойчивой трансформации команд.',
       ctaTitle: 'Сформируем ваш следующий этап развития вместе.',
       ctaButton: 'Связаться с Phoenix',
     },
+    companyInfo: {
+      eyebrow: 'Компания',
+      title: 'Phoenix Corporate',
+      description: 'Мы помогаем компаниям создавать устойчивые команды, усиливать операционные модели и уверенно масштабироваться.',
+      button: 'О нас →',
+    },
+    slider: {
+      services: {
+        title: 'Услуги',
+        text: 'Стратегические HR и бизнес-решения под этап развития вашей компании.',
+      },
+      references: {
+        title: 'Кейсы',
+        text: 'Посмотрите измеримые результаты наших консалтинговых проектов.',
+      },
+      contact: {
+        title: 'Контакты',
+        text: 'Свяжитесь с нами, чтобы обсудить вашу следующую трансформацию.',
+      },
+      button: 'Подробнее →',
+    },
     footer: {
       quickLinks: 'Быстрые ссылки',
-      contact: 'Контакты',
       description: 'Премиальные корпоративные решения для людей, процессов и роста.',
       rights: 'Все права защищены.',
     },
   },
   tr: {
     langLabel: 'TR',
+    nav: {
+      about: 'Hakkımızda',
+      services: 'Hizmetler',
+      references: 'Referanslar',
+      contacts: 'İletişim',
+    },
+    common: {
+      home: 'Ana Sayfa',
+      scrollToTop: 'Yukarı çık',
+    },
+    theme: {
+      light: 'Açık',
+      dark: 'Koyu',
+    },
+    header: {
+      toggleNavigation: 'Navigasyonu aç',
+    },
+    hero: {
+      eyebrow: 'Premium Kurumsal Çözümler',
+      title: 'İşinizi Hassasiyet ve Liderlikle İleri Taşıyın',
+      subtitle: 'Phoenix, sürdürülebilir performans için üst düzey danışmanlık ve İK dönüşüm hizmetleri sunar.',
+      primaryCta: 'Hizmetleri İncele',
+      secondaryCta: 'Danışmanlık Al',
+    },
     comingSoon: {
       title: 'Yakında',
+    },
+    features: {
+      consulting: { title: 'Danışmanlık', description: 'Operasyonları ve büyümeyi optimize eden odaklı uzman desteği.' },
+      insight: { title: 'Analiz', description: 'Stratejik kararları güçlendiren veri odaklı değerlendirmeler.' },
+      strategy: { title: 'Strateji', description: 'İş önceliklerinize uyumlu, net uygulama planları.' },
+    },
+    homeStats: {
+      eyebrow: 'Etki Metriği',
+      title: 'Danışmanlık çalışmalarımızın ölçülebilir sonuçları',
+      items: [
+        { label: 'Yıllık uzmanlık', value: 20, suffix: '+' },
+        { label: 'Kurumsal müşteri', value: 1000, suffix: '+' },
+        { label: 'Tamamlanan proje', value: 300, suffix: '+' },
+        { label: 'Sektörel ödül', value: 64, suffix: '' },
+      ],
+    },
+    social: {
+      eyebrow: 'Sosyal',
+      title: 'Sosyal Varlık',
+      subtitle: 'Phoenix ile resmi sosyal kanallarımızda bağlantıda kalın.',
+      followText: 'Takip Et',
+      linkedin: {
+        label: 'LinkedIn',
+      },
+      instagram: {
+        label: 'Instagram',
+      },
+    },
+    services: {
+      sectionEyebrow: 'Hizmetler',
+      sectionTitle: 'İhtiyaca Özel İK ve İş Hizmetleri',
+      sectionSubtitle: 'Modüler hizmet portföyümüz, ekibinize ve stratejik hedeflerinize uyum sağlar.',
+      pageTitle: 'Sürdürülebilir Büyüme için Premium Hizmetler',
+      pageSubtitle: 'Uzun vadeli kurumsal performans için üç odaklı çözüm alanı.',
+      learnMore: 'Detaylı İncele →',
+      recruitment: {
+        title: 'İşe Alım',
+        description: 'Doğru yeteneklere hızlı ulaşmanızı sağlayan uçtan uca işe alım çözümleri.',
+      },
+      hrSolutions: {
+        title: 'İK Çözümleri',
+        description: 'Esnek İK operasyonları, uyum desteği ve politika yapılandırması.',
+      },
+      talentMapping: {
+        title: 'Yetenek Haritalama',
+        description: 'Pazar ve rol içgörüleriyle stratejik iş gücü görünürlüğü oluşturun.',
+      },
+      leadershipDevelopment: {
+        title: 'Liderlik Gelişimi',
+        description: 'Yöneticileri koçluk, iletişim ve gelişim çerçeveleriyle güçlendirin.',
+      },
+      workforcePlanning: {
+        title: 'İş Gücü Planlama',
+        description: 'Gelecekteki talebe uygun dayanıklı ekipler planlayın ve tasarlayın.',
+      },
+      employerBranding: {
+        title: 'İşveren Markası',
+        description: 'Nitelikli yetenekleri çekmek ve elde tutmak için marka algınızı güçlendirin.',
+      },
+      pageBlocks: {
+        advisory: {
+          title: 'Stratejik Danışmanlık',
+          description: 'Yetenek, operasyon ve büyüme hedeflerini tek bir uygulanabilir yol haritasında birleştiren üst düzey danışmanlık.',
+        },
+        recruitment: {
+          title: 'İşe Alım Mükemmelliği',
+          description: 'Nitelikli uzmanları çekmek ve işe alım sonuçlarını hızlandırmak için yüksek hassasiyetli işe alım programları.',
+        },
+        transformation: {
+          title: 'Kurumsal Dönüşüm',
+          description: 'İK mimarisini, liderlik kapasitesini ve performans kültürünü geliştiren yapılandırılmış dönüşüm girişimleri.',
+        },
+      },
+    },
+    references: {
+      eyebrow: 'Referanslar',
+      title: 'Büyüyen Kuruluşların Güvendiği Ekip',
+      subtitle: 'Kalite ve etkimizi yansıtan seçili iş birlikleri.',
+      badge: 'Vaka Çalışması',
+      overview: 'Genel Bakış',
+      viewCaseStudy: 'Vakayı İncele →',
+      whatWeDidLabel: 'Yaptıklarımız',
+      challengesLabel: 'Zorluklar',
+      solutionsLabel: 'Çözümler',
+      resultsLabel: 'Sonuçlar',
+      companyLabel: 'Şirket',
+      testimonialLabel: 'Müşteri Yorumu',
+      pageTitle: 'Kurumsal İş Ortaklarımız',
+      pageSubtitle: 'Temel sektörlere göre sade müşteri vitrini.',
+      filters: {
+        hospitality: 'Konaklama',
+        manufacturing: 'Üretim',
+        construction: 'İnşaat',
+      },
+      enterpriseHiring: {
+        title: 'Kurumsal İşe Alım Dönüşümü',
+        description: 'Bölgesel bir teknoloji şirketinde işe alım döngüsünü %35 hızlandırdık.',
+      },
+      hrModernization: {
+        title: 'İK Süreç Modernizasyonu',
+        description: 'Bir lojistik markası için İK akışlarını yeniden tasarlayarak elde tutmayı %20 artırdık.',
+      },
+      leadershipRollout: {
+        title: 'Liderlik Programı Yayılımı',
+        description: '4 ofiste ölçülebilir etki oluşturan liderlik programı başlattık.',
+      },
+      workforceInitiative: {
+        title: 'Stratejik İş Gücü Girişimi',
+        description: 'İşe alım planlarını büyüme hedefleriyle uyumlayan aşamalı model kurduk.',
+      },
+    },
+    contact: {
+      eyebrow: 'İletişim',
+      title: 'Birlikte Güçlü Sonuçlar Üretelim',
+      subtitle: 'Hedeflerinizi konuşmak ve size özel çözüm planı almak için bize ulaşın.',
+      infoTitle: 'İletişim Bilgileri',
+      hours: 'Pzt - Cum: 09:00 - 18:00',
+      form: {
+        name: 'Ad Soyad',
+        email: 'E-posta',
+        phone: 'Telefon',
+        message: 'Mesaj',
+        send: 'Mesaj Gönder',
+      },
+      validation: {
+        name: 'Lütfen geçerli bir isim girin.',
+        email: 'Lütfen geçerli bir e-posta girin.',
+        phone: 'Lütfen geçerli bir telefon numarası girin.',
+        message: 'Mesaj en az 8 karakter olmalıdır.',
+        formError: 'Lütfen formu doğru şekilde doldurun.',
+      },
+      success: 'Mesaj başarıyla gönderildi. En kısa sürede sizinle iletişime geçeceğiz.',
+    },
+    aboutPage: {
+      heroTitle: 'Hakkımızda',
+      heroSubtitle: 'Kimlik, amaç ve uzun vadeli yön üzerine kurulu premium kurumsal profil.',
+      introEyebrow: 'Biz Kimiz',
+      introTitle: 'İnsan Odaklı Strateji ile Güvene Dayalı Kurumlar İnşa Ediyoruz',
+      introText:
+        'Phoenix; stratejik danışmanlık ile uygulama odaklı yetenek çözümlerini bir araya getirerek kurumların güvenle ölçeklenmesine yardımcı olur. Liderlik, kültür ve iş gücü mimarisini tek bir büyüme sisteminde buluştururuz.',
+      stats: [
+        { label: 'Danışmanlık deneyimi yılı', value: 12, suffix: '+' },
+        { label: 'Kurumsal dönüşüm programı', value: 180, suffix: '+' },
+        { label: 'Ortalama elde tutma artışı', value: 22, suffix: '%' },
+      ],
+      phoenixTitle: 'Phoenix',
+      phoenixText:
+        'Phoenix disiplinli yenilenmeyi temsil eder. Kurumların kimliğini koruyarak dönüşmesini sağlarız. Her iş birliği, şirketinizi farklı kılan unsurları anlayarak başlar ve büyüme boyunca bu avantajı koruyan sistemlerle devam eder.',
+      missionTitle: 'Misyon',
+      missionText:
+        'Misyonumuz insan stratejisini ölçülebilir iş performansına dönüştürmektir. Uygulanabilir yetenek ve İK çerçeveleriyle icra hızını, liderlik kalitesini ve çalışan bağlılığını artırırız.',
+      visionTitle: 'Vizyon',
+      visionText:
+        'Vizyonumuz, büyüyen pazarlarda premium kurumsal danışmanlık için güvenilir bir referans noktası olmak ve stratejik netlik, etik liderlik, sürdürülebilir iş gücü dönüşümü standartlarını belirlemektir.',
+      ctaTitle: 'Bir sonraki büyüme adımınızı birlikte tasarlayalım.',
+      ctaButton: 'Phoenix ile İletişime Geç',
+    },
+    companyInfo: {
+      eyebrow: 'Şirket',
+      title: 'Phoenix Corporate',
+      description: 'Kuruluşların güçlü ekipler kurmasına, operasyonel modeli geliştirmesine ve güvenle büyümesine destek oluyoruz.',
+      button: 'Hakkımızda →',
+    },
+    slider: {
+      services: {
+        title: 'Hizmetler',
+        text: 'Büyüme aşamanıza uygun stratejik İK ve iş çözümleri.',
+      },
+      references: {
+        title: 'Referanslar',
+        text: 'Danışmanlık projelerimizin ölçülebilir sonuçlarını keşfedin.',
+      },
+      contact: {
+        title: 'İletişim',
+        text: 'Bir sonraki dönüşüm yol haritanızı birlikte planlayalım.',
+      },
+      button: 'İncele →',
+    },
+    footer: {
+      quickLinks: 'Hızlı Bağlantılar',
+      description: 'İnsan, süreç ve büyüme odaklı premium kurumsal çözümler.',
+      rights: 'Tüm hakları saklıdır.',
     },
   },
 };

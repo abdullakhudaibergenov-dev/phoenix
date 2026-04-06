@@ -4,7 +4,7 @@ import RevealOnScroll from '../common/RevealOnScroll';
 
 function ReferenceOverviewCard({ item, delay = 0 }) {
   const { language, t } = useLanguage();
-  const content = item.content[language];
+  const content = item.content[language] || item.content.en;
 
   return (
     <RevealOnScroll delay={delay}>

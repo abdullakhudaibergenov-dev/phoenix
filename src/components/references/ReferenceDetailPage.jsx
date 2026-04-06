@@ -12,7 +12,7 @@ function ReferenceDetailPage() {
 
   if (!reference) return <Navigate to="/references" replace />;
 
-  const content = reference.content[language];
+  const content = reference.content[language] || reference.content.en;
   const currentIndex = referencesData.findIndex((item) => item.slug === reference.slug);
   const prevItem = referencesData[currentIndex - 1] ?? null;
   const nextItem = referencesData[currentIndex + 1] ?? null;
@@ -63,14 +63,14 @@ function ReferenceDetailPage() {
           <div className="mt-8 flex flex-wrap items-center justify-between gap-4 border-t border-theme pt-6">
             {prevItem ? (
               <Link to={`/references/${prevItem.slug}`} className="text-sm font-semibold text-body transition hover:text-heading">
-                ← {prevItem.content[language].menuLabel}
+                ← {(prevItem.content[language] || prevItem.content.en).menuLabel}
               </Link>
             ) : (
               <span />
             )}
             {nextItem ? (
               <Link to={`/references/${nextItem.slug}`} className="text-sm font-semibold text-body transition hover:text-heading">
-                {nextItem.content[language].menuLabel} →
+                {(nextItem.content[language] || nextItem.content.en).menuLabel} →
               </Link>
             ) : null}
           </div>

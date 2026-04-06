@@ -6,28 +6,9 @@ import Container from '../components/common/Container';
 import AnimatedCounter from '../components/common/AnimatedCounter';
 import RevealOnScroll from '../components/common/RevealOnScroll';
 
-const trAbout = {
-  introEyebrow: 'Biz Kimiz',
-  heroTitle: 'Hakkımızda',
-  heroSubtitle: 'Kimlik, amaç ve uzun vadeli yön üzerine kurulu premium kurumsal profil.',
-  phoenixTitle: 'Phoenix',
-  phoenixText: 'Phoenix disiplinli yenilenmeyi temsil eder. Kurumların kimliğini koruyarak dönüşmesini sağlarız.',
-  missionTitle: 'Misyon',
-  missionText: 'Misyonumuz insan stratejisini ölçülebilir iş performansına dönüştürmektir.',
-  visionTitle: 'Vizyon',
-  visionText: 'Vizyonumuz etik liderlik ve sürdürülebilir dönüşümde referans danışmanlık standardı olmaktır.',
-  ctaTitle: 'Bir sonraki büyüme adımınızı birlikte tasarlayalım.',
-  ctaButton: 'Phoenix ile İletişime Geç',
-  stats: [
-    { label: 'Danışmanlık deneyimi yılı', value: 12, suffix: '+' },
-    { label: 'Kurumsal dönüşüm programı', value: 180, suffix: '+' },
-    { label: 'Ortalama elde tutma artışı', value: 22, suffix: '%' },
-  ],
-};
-
 function AboutPage() {
-  const { t, language } = useLanguage();
-  const about = language === 'tr' ? trAbout : t.aboutPage;
+  const { t } = useLanguage();
+  const about = t.aboutPage;
 
   return (
     <>

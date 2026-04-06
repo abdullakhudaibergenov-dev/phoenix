@@ -11,7 +11,7 @@ function Header() {
   const location = useLocation();
   const { language, setLanguage, t } = useLanguage();
   const { theme, toggleTheme } = useTheme();
-  const themeLabel = language === 'ru' ? (theme === 'dark' ? 'Светлая' : 'Тёмная') : language === 'tr' ? (theme === 'dark' ? 'Açık' : 'Koyu') : theme === 'dark' ? 'Light' : 'Dark';
+  const themeLabel = theme === 'dark' ? t.theme.light : t.theme.dark;
   const navigate = useNavigate();
 
   const handleHomeSectionClick = (id) => {
@@ -62,7 +62,7 @@ function Header() {
             </div>
           </div>
 
-          <button className="rounded-md border border-zinc-700 p-2 text-heading lg:hidden" aria-label="Toggle navigation" onClick={() => setOpen((prev) => !prev)}>
+          <button className="rounded-md border border-zinc-700 p-2 text-heading lg:hidden" aria-label={t.header.toggleNavigation} onClick={() => setOpen((prev) => !prev)}>
             ☰
           </button>
         </div>

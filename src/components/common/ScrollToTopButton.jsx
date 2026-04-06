@@ -3,8 +3,8 @@ import useLanguage from '../../hooks/useLanguage';
 
 function ScrollToTopButton() {
   const [visible, setVisible] = useState(false);
-  const { language } = useLanguage();
-  const label = language === 'ru' ? 'Наверх' : language === 'tr' ? 'Yukarı çık' : 'Scroll to top';
+  const { t } = useLanguage();
+  const label = t.common.scrollToTop;
 
   useEffect(() => {
     const onScroll = () => setVisible(window.scrollY > 320);

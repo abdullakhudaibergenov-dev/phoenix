@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import Container from '../components/common/Container';
 import RevealOnScroll from '../components/common/RevealOnScroll';
 import SectionTitle from '../components/common/SectionTitle';
@@ -6,12 +6,6 @@ import companyLogo from '../assets/logos/company-placeholder.svg';
 import phoenixLogo from '../assets/phoenix-logo.svg';
 import avatarLogo from '../assets/logos/avatar-placeholder.svg';
 import useLanguage from '../hooks/useLanguage';
-
-const filtersByLang = {
-  en: ['Hospitality', 'Manufacturing', 'Construction'],
-  ru: ['Гостиницы', 'Производство', 'Строительство'],
-  tr: ['Konaklama', 'Üretim', 'İnşaat'],
-};
 
 const logos = [companyLogo, phoenixLogo, avatarLogo];
 
@@ -28,9 +22,16 @@ const showcase = [
 ];
 
 function ReferencesPage() {
-  const { language } = useLanguage();
-  const filters = filtersByLang[language] || filtersByLang.en;
+  const { t } = useLanguage();
+  const filters = useMemo(
+    () => [t.references.filters.hospitality, t.references.filters.manufacturing, t.references.filters.construction],
+    [t.references.filters.construction, t.references.filters.hospitality, t.references.filters.manufacturing],
+  );
   const [activeFilter, setActiveFilter] = useState(filters[0]);
+
+  useEffect(() => {
+    setActiveFilter(filters[0]);
+  }, [filters]);
 
   const reverseMap = {
     [filters[0]]: 'Hospitality',
@@ -48,9 +49,9 @@ function ReferencesPage() {
       <Container>
         <RevealOnScroll>
           <SectionTitle
-            eyebrow={language === 'ru' ? 'Кейсы' : language === 'tr' ? 'Referanslar' : 'References'}
-            title={language === 'ru' ? 'Наши корпоративные партнеры' : language === 'tr' ? 'Kurumsal İş Ortaklarımız' : 'Our Corporate Partners'}
-            subtitle={language === 'ru' ? 'Минималистичная витрина клиентов по ключевым направлениям.' : language === 'tr' ? 'Temel sektörlere göre sade müşteri vitrini.' : 'A minimal client showcase across key industry verticals.'}
+            eyebrow={t.references.eyebrow}
+            title={t.references.pageTitle}
+            subtitle={t.references.pageSubtitle}
           />
         </RevealOnScroll>
 

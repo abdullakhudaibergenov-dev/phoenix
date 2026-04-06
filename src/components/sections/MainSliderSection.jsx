@@ -10,29 +10,15 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import Container from '../common/Container';
 
-const sliderContent = {
-  en: [
-    { title: 'Services', text: 'Strategic HR and business services tailored to your growth stage.', link: '/services', button: 'Explore →' },
-    { title: 'References', text: 'Explore measurable outcomes from our consulting engagements.', link: '/references', button: 'Explore →' },
-    { title: 'Contact', text: 'Connect with us and build your next transformation roadmap.', link: '/contacts', button: 'Explore →' },
-  ],
-  ru: [
-    { title: 'Услуги', text: 'Стратегические HR и бизнес-решения под этап развития вашей компании.', link: '/services', button: 'Подробнее →' },
-    { title: 'Кейсы', text: 'Посмотрите измеримые результаты наших консалтинговых проектов.', link: '/references', button: 'Подробнее →' },
-    { title: 'Контакты', text: 'Свяжитесь с нами, чтобы обсудить вашу следующую трансформацию.', link: '/contacts', button: 'Подробнее →' },
-  ],
-  tr: [
-    { title: 'Hizmetler', text: 'Büyüme aşamanıza uygun stratejik İK ve iş çözümleri.', link: '/services', button: 'İncele →' },
-    { title: 'Referanslar', text: 'Danışmanlık projelerimizin ölçülebilir sonuçlarını keşfedin.', link: '/references', button: 'İncele →' },
-    { title: 'İletişim', text: 'Bir sonraki dönüşüm yol haritanızı birlikte planlayalım.', link: '/contacts', button: 'İncele →' },
-  ],
-};
-
 const slideImages = [servicesImg, referencesImg, contactImg];
 
 function MainSliderSection() {
-  const { language } = useLanguage();
-  const slides = sliderContent[language] || sliderContent.en;
+  const { t } = useLanguage();
+  const slides = [
+    { ...t.slider.services, link: '/services', button: t.slider.button },
+    { ...t.slider.references, link: '/references', button: t.slider.button },
+    { ...t.slider.contact, link: '/contacts', button: t.slider.button },
+  ];
 
   return (
     <section className="pb-20">

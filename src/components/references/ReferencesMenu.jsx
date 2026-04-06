@@ -26,7 +26,7 @@ function ReferencesMenu({ basePath = '/references' }) {
               `rounded-md px-4 py-2 text-sm font-medium transition ${isActive ? 'bg-[color:var(--heading)] text-black' : 'text-body hover:text-heading'}`
             }
           >
-            {item.content[language].menuLabel}
+            {(item.content[language] || item.content.en).menuLabel}
           </NavLink>
         ))}
       </nav>

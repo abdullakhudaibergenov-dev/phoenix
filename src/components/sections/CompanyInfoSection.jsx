@@ -3,30 +3,9 @@ import useLanguage from '../../hooks/useLanguage';
 import Container from '../common/Container';
 import RevealOnScroll from '../common/RevealOnScroll';
 
-const copyByLang = {
-  en: {
-    eyebrow: 'Company',
-    title: 'Phoenix Corporate',
-    description: 'We help organizations build resilient teams, strengthen operating models, and execute growth with confidence.',
-    button: 'About Us →',
-  },
-  ru: {
-    eyebrow: 'Компания',
-    title: 'Phoenix Corporate',
-    description: 'Мы помогаем компаниям создавать устойчивые команды, усиливать операционные модели и уверенно масштабироваться.',
-    button: 'О нас →',
-  },
-  tr: {
-    eyebrow: 'Şirket',
-    title: 'Phoenix Corporate',
-    description: 'Kuruluşların güçlü ekipler kurmasına, operasyonel modeli geliştirmesine ve güvenle büyümesine destek oluyoruz.',
-    button: 'Hakkımızda →',
-  },
-};
-
 function CompanyInfoSection() {
-  const { language } = useLanguage();
-  const copy = copyByLang[language] || copyByLang.en;
+  const { t } = useLanguage();
+  const copy = t.companyInfo;
 
   return (
     <section className="py-20">
