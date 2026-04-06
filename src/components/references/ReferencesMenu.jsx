@@ -7,12 +7,12 @@ function ReferencesMenu({ basePath = '/references' }) {
 
   return (
     <div className="overflow-x-auto pb-2">
-      <nav className="flex min-w-max items-center gap-2 rounded-xl border border-zinc-800 bg-primary p-2">
+      <nav className="flex min-w-max items-center gap-2 rounded-xl border border-theme bg-surface p-2">
         <NavLink
           to={basePath}
           end
           className={({ isActive }) =>
-            `rounded-md px-4 py-2 text-sm font-medium transition ${isActive ? 'bg-gold text-black' : 'text-zinc-300 hover:text-gold'}`
+            `rounded-md px-4 py-2 text-sm font-medium transition ${isActive ? 'bg-[color:var(--heading)] text-black' : 'text-body hover:text-heading'}`
           }
         >
           {t.references.overview}
@@ -23,7 +23,7 @@ function ReferencesMenu({ basePath = '/references' }) {
             key={item.slug}
             to={`${basePath}/${item.slug}`}
             className={({ isActive }) =>
-              `rounded-md px-4 py-2 text-sm font-medium transition ${isActive ? 'bg-gold text-black' : 'text-zinc-300 hover:text-gold'}`
+              `rounded-md px-4 py-2 text-sm font-medium transition ${isActive ? 'bg-[color:var(--heading)] text-black' : 'text-body hover:text-heading'}`
             }
           >
             {item.content[language].menuLabel}

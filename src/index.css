@@ -5,21 +5,21 @@
 :root {
   --bg: #070707;
   --surface: #101010;
-  --surface-2: #141414;
-  --text: #f8f8f8;
-  --muted: #d7d7d7;
+  --surface-2: #161616;
+  --text: #ffffff;
+  --muted: #f0f0f0;
   --heading: #d4af37;
-  --border: #2a2a2a;
+  --border: #2d2d2d;
 }
 
 :root[data-theme='light'] {
-  --bg: #f8f8f6;
+  --bg: #faf9f5;
   --surface: #ffffff;
-  --surface-2: #f2f1ed;
-  --text: #121212;
-  --muted: #2e2e2e;
+  --surface-2: #f3f1ea;
+  --text: #101010;
+  --muted: #202020;
   --heading: #b78a18;
-  --border: #dfddd6;
+  --border: #d6d3ca;
 }
 
 html,
@@ -40,27 +40,13 @@ body {
 }
 
 @layer utilities {
-  .bg-app {
-    background-color: var(--bg);
-  }
-  .bg-surface {
-    background-color: var(--surface);
-  }
-  .bg-surface-2 {
-    background-color: var(--surface-2);
-  }
-  .text-body {
-    color: var(--text);
-  }
-  .text-muted {
-    color: var(--muted);
-  }
-  .text-heading {
-    color: var(--heading);
-  }
-  .border-theme {
-    border-color: var(--border);
-  }
+  .bg-app { background-color: var(--bg); }
+  .bg-surface { background-color: var(--surface); }
+  .bg-surface-2 { background-color: var(--surface-2); }
+  .text-body { color: var(--text); }
+  .text-muted { color: var(--muted); }
+  .text-heading { color: var(--heading); }
+  .border-theme { border-color: var(--border); }
 }
 
 .phone-input .PhoneInputInput {
@@ -72,6 +58,19 @@ body {
 
 .phone-input .PhoneInputCountry {
   margin-right: 0.5rem;
+}
+
+.phone-input .PhoneInputCountrySelect {
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+}
+
+.phone-input .PhoneInputCountrySelect option {
+  background: var(--surface);
+  color: var(--text);
 }
 
 .home-slider .swiper-button-next,
